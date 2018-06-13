@@ -19,6 +19,8 @@ module Symbiosis
       return ArgumentError, "Expecting true or false" unless [TrueClass, FalseClass].include?(bool.class)
 
       set_param("stats", bool, self.config_dir)
+
+      return bool
     end
 
     #
